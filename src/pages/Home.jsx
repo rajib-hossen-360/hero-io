@@ -1,9 +1,10 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import appsData from '../data/appsData.json';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 const Home = () => {
-  // Figma design top 8 trending apps
+  useDocumentTitle('Home - Productive Apps Marketplace');
+
   const trendingApps = appsData.slice(0, 8);
 
   return (

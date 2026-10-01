@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import appsData from '../data/appsData.json';
 import { getInstalledAppIds, removeInstalledApp } from '../utils/localStorage';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 const Installation = () => {
+  useDocumentTitle('Your Installed Applications');
+
   const [installedApps, setInstalledApps] = useState([]);
   const [sortBy, setSortBy] = useState('downloads');
 
