@@ -3,9 +3,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Apps from './pages/Apps';
+import AppDetails from './pages/AppDetails';
 
-// Temporary placeholder components for remaining routes
-const AppDetails = () => <div className="min-h-[60vh] p-8 text-center text-xl">App Details Page (Coming Soon)</div>;
 const Installation = () => <div className="min-h-[60vh] p-8 text-center text-xl">Installation Page (Coming Soon)</div>;
 const NotFound = () => <div className="min-h-[60vh] p-8 text-center text-xl font-bold text-red-500">404 - Page Not Found</div>;
 
