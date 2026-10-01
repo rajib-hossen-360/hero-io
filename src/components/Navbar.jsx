@@ -1,55 +1,37 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const activeStyle = "text-purple-600 font-semibold border-b-2 border-purple-600 pb-1";
+  const defaultStyle = "text-slate-600 hover:text-purple-600 font-medium transition pb-1";
+
   return (
-    <nav className="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <nav className="bg-white border-b border-slate-100 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-            H
-          </div>
-          <span className="font-bold text-xl text-gray-900">Hero IO</span>
+        <Link to="/" className="text-2xl font-black text-purple-600 tracking-tight">
+          Hero <span className="text-slate-900">IO</span>
         </Link>
 
-        {/* Navigation Links */}
-        <div className="flex items-center gap-8 font-medium text-sm">
+        <div className="flex items-center space-x-6">
           <NavLink
             to="/"
-            className={({ isActive }) =>
-              isActive ? "text-purple-600 font-semibold" : "text-gray-600 hover:text-purple-600 transition"
-            }
+            end
+            className={({ isActive }) => (isActive ? activeStyle : defaultStyle)}
           >
             Home
           </NavLink>
           <NavLink
             to="/apps"
-            className={({ isActive }) =>
-              isActive ? "text-purple-600 font-semibold" : "text-gray-600 hover:text-purple-600 transition"
-            }
+            className={({ isActive }) => (isActive ? activeStyle : defaultStyle)}
           >
             Apps
           </NavLink>
           <NavLink
             to="/installation"
-            className={({ isActive }) =>
-              isActive ? "text-purple-600 font-semibold" : "text-gray-600 hover:text-purple-600 transition"
-            }
+            className={({ isActive }) => (isActive ? activeStyle : defaultStyle)}
           >
             Installation
           </NavLink>
         </div>
-
-        {/* Contribution Button */}
-        <a
-          href="https://github.com/YOUR_GITHUB_USERNAME"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition"
-        >
-          Contribution
-        </a>
       </div>
     </nav>
   );
