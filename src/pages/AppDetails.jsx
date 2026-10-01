@@ -1,13 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
+import { toast } from 'react-toastify';
 import appsData from '../data/appsData.json';
+import { getInstalledAppIds, addInstalledApp } from '../utils/localStorage';
 
 const AppDetails = () => {
   const { id } = useParams();
-  const app = appsData.find((item) => item.id === parseInt(id));
+  const appId = parseInt(id);
+  const app = appsData.find((item) => item.id === appId);
 
   const [isInstalled, setIsInstalled] = useState(false);
+
+  useEffect(() => {
+    const installedIds = getInstalledAppIds();
+    if (installedIds.includes(appId)) {
+      setIsInstalled(true);
+    }
+  }, [appId]);
 
   if (!app) {
     return (
@@ -21,17 +31,17 @@ const AppDetails = () => {
   }
 
   const handleInstall = () => {
+    addInstalledApp(appId);
     setIsInstalled(true);
+    toast.success(`${app.title} installed successfully!`);
   };
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
-      {/* Back Button */}
       <Link to="/apps" className="text-sm font-medium text-purple-600 hover:underline">
         &larr; Back to Apps
       </Link>
 
-      {/* App Header Section */}
       <div className="bg-white p-6 md:p-8 rounded-2xl border border-slate-100 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
           <img
@@ -63,15 +73,12 @@ const AppDetails = () => {
         </button>
       </div>
 
-      {/* Description & Rating Analytics Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        {/* Description */}
         <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
           <h2 className="text-xl font-bold text-slate-900 mb-4">About this app</h2>
           <p className="text-slate-600 leading-relaxed">{app.description}</p>
         </div>
 
-        {/* Rating Breakdown Chart */}
         <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
           <h2 className="text-xl font-bold text-slate-900 mb-4">Ratings Breakdown</h2>
           <div className="h-64 w-full">

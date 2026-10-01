@@ -1,16 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import appsData from '../data/appsData.json';
+import { getInstalledAppIds, removeInstalledApp } from '../utils/localStorage';
 
 const Installation = () => {
-  // Demo default installed apps (e.g. App IDs: 1, 2, 5)
-  const [installedApps, setInstalledApps] = useState(
-    appsData.filter((app) => [1, 2, 5].includes(app.id))
-  );
+  const [installedApps, setInstalledApps] = useState([]);
   const [sortBy, setSortBy] = useState('downloads');
 
+  useEffect(() => {
+    const ids = getInstalledAppIds();
+    const apps = appsData.filter((app) => ids.includes(app.id));
+    setInstalledApps(apps);
+  }, []);
+
   const handleUninstall = (id, title) => {
+    removeInstalledApp(id);
     setInstalledApps((prev) => prev.filter((app) => app.id !== id));
     toast.info(`${title} has been uninstalled!`);
   };
@@ -23,7 +28,6 @@ const Installation = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
-      {/* Page Header */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <div>
           <h1 className="text-3xl font-bold text-slate-900">Installed Applications</h1>
@@ -32,7 +36,6 @@ const Installation = () => {
           </p>
         </div>
 
-        {/* Sort Controls */}
         {installedApps.length > 0 && (
           <select
             value={sortBy}
@@ -45,7 +48,6 @@ const Installation = () => {
         )}
       </div>
 
-      {/* Installed Apps List */}
       {sortedApps.length > 0 ? (
         <div className="space-y-4">
           {sortedApps.map((app) => (
