@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "title": "TaskFlow Pro",
+    "companyName": "Hero Tech Labs",
+    "image": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=300",
+    "description": "Boost your daily productivity with TaskFlow Pro. Manage tasks, projects, and deadlines easily.",
+    "size": 45,
+    "reviews": 14200,
+    "ratingAvg": 4.8,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 10000 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Focus Timer",
+    "companyName": "Productive Mind",
+    "image": "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=300",
+    "description": "Stay focused using the Pomodoro technique and track your work sessions.",
+    "size": 28,
+    "reviews": 8500,
+    "ratingAvg": 4.6,
+    "downloads": 5000000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 5500 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "CodeSync",
+    "companyName": "DevStudio",
+    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=300",
+    "description": "Real-time collaborative code editor for remote teams.",
+    "size": 65,
+    "reviews": 21000,
+    "ratingAvg": 4.9,
+    "downloads": 12000000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 15000 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Habit Tracker",
+    "companyName": "LifeCraft",
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300",
+    "description": "Build better habits and track your progress daily.",
+    "size": 32,
+    "reviews": 6400,
+    "ratingAvg": 4.5,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 3600 }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "NoteEase",
+    "companyName": "Hero Tech Labs",
+    "image": "https://images.unsplash.com/photo-1517842645767-c639042777db?w=300",
+    "description": "Minimalist note-taking app with markdown support.",
+    "size": 20,
+    "reviews": 9800,
+    "ratingAvg": 4.7,
+    "downloads": 6000000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "CloudVault",
+    "companyName": "SecureApps",
+    "image": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=300",
+    "description": "Encrypted cloud storage for your sensitive files.",
+    "size": 55,
+    "reviews": 18500,
+    "ratingAvg": 4.8,
+    "downloads": 9500000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 350 },
+      { "name": "3 star", "count": 900 },
+      { "name": "4 star", "count": 4000 },
+      { "name": "5 star", "count": 13000 }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "FitLog",
+    "companyName": "HealthFirst",
+    "image": "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=300",
+    "description": "Track your workouts, calories, and fitness goals.",
+    "size": 40,
+    "reviews": 11200,
+    "ratingAvg": 4.4,
+    "downloads": 4800000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Pocket Budget",
+    "companyName": "FinanceSmart",
+    "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=300",
+    "description": "Manage expenses and plan budgets effortlessly.",
+    "size": 35,
+    "reviews": 13000,
+    "ratingAvg": 4.6,
+    "downloads": 7200000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 800 },
+      { "name": "4 star", "count": 3700 },
+      { "name": "5 star", "count": 8000 }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "DevTerminal",
+    "companyName": "DevStudio",
+    "image": "https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=300",
+    "description": "SSH terminal client with tab support and snippets.",
+    "size": 50,
+    "reviews": 7500,
+    "ratingAvg": 4.7,
+    "downloads": 2900000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Zen Reader",
+    "companyName": "Productive Mind",
+    "image": "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=300",
+    "description": "Distraction-free ebook and article reader.",
+    "size": 25,
+    "reviews": 4200,
+    "ratingAvg": 4.3,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2000 }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "PixEdit",
+    "companyName": "Hero Tech Labs",
+    "image": "https://images.unsplash.com/photo-1542744094-3a31b272c490?w=300",
+    "description": "Lightweight image editor with powerful filters.",
+    "size": 60,
+    "reviews": 16000,
+    "ratingAvg": 4.8,
+    "downloads": 11000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 11000 }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "TimeTrack",
+    "companyName": "LifeCraft",
+    "image": "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=300",
+    "description": "Automatic time tracking for freelancers and agencies.",
+    "size": 30,
+    "reviews": 8900,
+    "ratingAvg": 4.5,
+    "downloads": 4100000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 700 },
+      { "name": "4 star", "count": 2800 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  }
+]
