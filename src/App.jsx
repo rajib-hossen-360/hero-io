@@ -8,8 +8,7 @@ import Home from './pages/Home';
 import Apps from './pages/Apps';
 import AppDetails from './pages/AppDetails';
 import Installation from './pages/Installation';
-
-const NotFound = () => <div className="min-h-[60vh] p-8 text-center text-xl font-bold text-red-500">404 - Page Not Found</div>;
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
