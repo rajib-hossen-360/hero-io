@@ -5,7 +5,7 @@ Hero IO is a modern, responsive web application built with **React, Vite, and Ta
 ## 🚀 Live Demo
 
 **Live Site:**
-https://hero-io.vercel.app
+https://hero-io-psi.vercel.app
 
 ## ✨ Key Features
 
@@ -63,7 +63,7 @@ https://hero-io.vercel.app
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/hero-io.git
+git clone https://github.com/rajib-hossen-360/hero-io.git
 ```
 
 ### 2. Navigate to the Project Directory
@@ -117,7 +117,8 @@ Hero IO demonstrates practical implementation of:
 
 ## 👨‍💻 Author
 
-**Rajib Hossen**
-CSE Student | Bangladesh University
+**Rajib Hossen**  
+CSE Student  
+Bangladesh University  
 
 Passionate about Web Development, Software Engineering, and building modern web applications.
